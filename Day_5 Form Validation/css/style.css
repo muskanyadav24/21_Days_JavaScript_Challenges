@@ -1,0 +1,129 @@
+:root {
+    --pri: #00d2ff;
+    --sec: #3a7bd5;
+    --bg: #0f172a;
+    --card: #1e293b;
+    --txt: #f8fafc;
+    --dim: #94a3b8;
+    --err: #fb7185;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top right, #1e293b, #0f172a);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--txt);
+    padding: 20px;
+}
+
+.container {
+    background: var(--card);
+    width: 100%;
+    max-width: 400px;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    background: linear-gradient(to right, var(--pri), var(--sec));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.subtitle {
+    color: var(--dim);
+    margin-bottom: 30px;
+    font-size: 0.9rem;
+}
+
+.input-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    font-size: 0.85rem;
+    margin-bottom: 8px;
+    color: var(--dim);
+}
+
+input {
+    width: 100%;
+    background: rgba(15, 23, 42, 0.6);
+    border: 2px solid transparent;
+    padding: 12px 16px;
+    border-radius: 12px;
+    color: white;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus {
+    border-color: var(--pri);
+    background: rgba(15, 23, 42, 0.8);
+}
+
+.error-msg {
+    color: var(--err);
+    font-size: 0.75rem;
+    margin-top: 5px;
+    height: 15px;
+    opacity: 0;
+}
+
+.input-group.error input {
+    border-color: var(--err);
+}
+
+.input-group.error .error-msg {
+    opacity: 1;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    border-radius: 12px;
+    border: none;
+    font-weight: 600;
+    background: linear-gradient(45deg, var(--pri), var(--sec));
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+    margin-top: 10px;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 210, 255, 0.3);
+}
+
+.footer-text {
+    margin-top: 25px;
+    font-size: 0.85rem;
+    color: var(--dim);
+}
+
+.footer-text a {
+    color: var(--pri);
+    text-decoration: none;
+}
+
+.footer-text a:hover {
+    text-decoration: underline;
+}
