@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced To-Do App</title>
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts: Inter -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="background-radial"></div>
+
+    <div class="container py-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-6 col-md-8">
+                <div class="todo-card p-4 p-md-5">
+                    <header class="text-center mb-4">
+                        <h1 class="display-5 fw-bold gradient-text">Advanced To-do App</h1>
+                        <p class="text-muted">Plan your day the smart way</p>
+                    </header>
+
+                    <form id="todo-form" class="mb-4">
+                        <div class="input-group input-group-lg custom-input-group">
+                            <input type="text" id="todo-input" class="form-control border-0 bg-transparent" placeholder="What needs to be done?" aria-label="Task input">
+                            <button class="btn btn-primary px-4" type="submit" id="add-btn">
+                                <i class="fas fa-plus"></i>
+                            </button>
+                        </div>
+                    </form>
+
+                    <div class="filters d-flex justify-content-between align-items-center mb-3 px-1">
+                        <span id="task-count" class="text-secondary small fw-medium">0 tasks pending</span>
+                        <button id="clear-all" class="btn btn-link text-danger text-decoration-none p-0 small fw-medium">Clear All</button>
+                    </div>
+
+                    <ul id="todo-list" class="list-unstyled mb-0"></ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Bootstrap 5 JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
