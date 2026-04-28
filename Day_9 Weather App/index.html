@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1><i class="fa-solid fa-cloud-sun"></i> Weather App</h1>
+
+    <div class="search-box">
+      <input type="text" id="cityInput" placeholder="Enter city name...">
+      <button id="searchBtn"><i class="fa-solid fa-magnifying-glass"></i></button>
+    </div>
+
+    <div id="loading" class="loading hidden">
+      <div class="spinner"></div>
+      <p>Fetching weather...</p>
+    </div>
+
+    <div id="weatherResult" class="weather-result hidden">
+      <div class="city-name" id="cityName"></div>
+      <div class="weather-icon" id="weatherIcon"></div>
+      <div class="temperature" id="temperature"></div>
+      <div class="condition" id="condition"></div>
+      
+      <div class="details-grid">
+        <div class="detail-card">
+          <i class="fa-solid fa-droplet"></i>
+          <span class="detail-label">Humidity</span>
+          <span class="detail-value" id="humidity"></span>
+        </div>
+        <div class="detail-card">
+          <i class="fa-solid fa-wind"></i>
+          <span class="detail-label">Wind</span>
+          <span class="detail-value" id="wind"></span>
+        </div>
+      </div>
+    </div>
+
+    <p id="error" class="error hidden"></p>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
+
