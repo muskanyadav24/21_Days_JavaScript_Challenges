@@ -1,6 +1,6 @@
 const products = [
 // Electronics
-  { name: "iPhone 14", category: "electronics" },
+  { name: "iPhone 17", category: "electronics" },
   { name: "Samsung TV", category: "electronics" },
   { name: "Headphones", category: "electronics" },
   { name: "Laptop", category: "electronics" },
