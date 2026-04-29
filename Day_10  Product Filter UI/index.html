@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Product Filter UI</title>
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+
+  <div class="container">
+    <h1>🛍 Product Filter UI</h1>
+
+    <p class="hint">👉 Search karo ya category select karo</p>
+
+    <!-- Search -->
+    <input type="text" id="searchInput" placeholder="Search products...">
+
+    <!-- Buttons -->
+    <div class="buttons">
+      <button onclick="filterProducts('all')">All</button>
+      <button onclick="filterProducts('electronics')">Electronics</button>
+      <button onclick="filterProducts('clothing')">Clothing</button>
+    </div>
+
+    <!-- Product List -->
+    <div id="productList" class="product-list"></div>
+  </div>
+
+  <script src="./js/script.js"></script>
+</body>
+</html>
