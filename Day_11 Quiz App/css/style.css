@@ -1,0 +1,129 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+body {
+  background-color: #574964;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start-screen {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+#startBtn {
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #574964;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+#startBtn:hover {
+  background-color: #574964;
+}
+
+.quiz-container {
+  background: #fff;
+  width: 350px;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+  text-align: center;
+  animation: fadeIn 0.5s ease;
+}
+
+#question {
+  font-size: 20px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+#options button {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 8px;
+  background: #f1f1f1;
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 15px;
+}
+
+#options button:hover {
+  background-color: #574964;
+  color: white;
+}
+
+#nextBtn {
+  margin-top: 15px;
+  padding: 12px;
+  width: 100%;
+  border: none;
+  border-radius: 8px;
+  background-color: #574964;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#nextBtn:hover {
+  background-color: #574964;
+}
+
+#timer {
+  margin-top: 15px;
+  font-weight: bold;
+  color: #764ba2;
+}
+
+#result {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  text-align: center;
+  width: 300px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.hidden {
+  display: none;
+}
+
+.restartBtn{
+  margin-top: 20px;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #574964;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
