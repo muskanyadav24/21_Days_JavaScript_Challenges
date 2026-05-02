@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day 13: Search with Debounce | 21 Days JS Challenge</title>
+    <meta name="description" content="A modern search interface implementing debouncing for optimized performance.">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Search with Debounce</h1>
+            <p class="subtitle">Efficiently searching through data with optimized timing.</p>
+        </header>
+
+        <main>
+            <div class="search-wrapper">
+                <div class="search-input-container">
+                    <input type="text" id="searchInput" placeholder="Search for technologies, tools..." autocomplete="off">
+                    <i data-lucide="search" class="search-icon"></i>
+                    <button id="clearBtn">✖</button>
+                </div>
+            </div>
+
+            <div class="results-container" id="resultsContainer">
+                <div class="status-message" id="statusMessage">
+                    <i data-lucide="info" size="24"></i>
+                    <span>Type something to start searching...</span>
+                </div>
+                <ul class="results-list" id="resultsList" style="display: none;">
+                    <!-- Results will be injected here -->
+                </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+</html>
