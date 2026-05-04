@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Product Page</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h1>🛍️ TechStore</h1>
+            </div>
+            <div class="cart-toggle">
+                <button id="cartBtn" class="cart-btn">
+                    🛒 Cart <span id="cartCount" class="cart-count">0</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <div class="container">
+            <div class="content-wrapper">
+                <!-- Products Section -->
+                <section class="products-section">
+                    <h2>Featured Products</h2>
+                    <div id="productsGrid" class="products-grid">
+                        <!-- Products will be loaded here by JavaScript -->
+                    </div>
+                </section>
+
+                <!-- Cart Sidebar -->
+                <aside id="cartSidebar" class="cart-sidebar">
+                    <div class="cart-header">
+                        <h3>Shopping Cart</h3>
+                        <button id="closeCartBtn" class="close-btn">X</button>
+                    </div>
+                    <div id="cartItems" class="cart-items">
+                        <!-- Cart items will be displayed here -->
+                    </div>
+                    <div id="emptyCartMsg" class="empty-cart-msg">
+                        Your cart is empty
+                    </div>
+                    <div id="cartSummary" class="cart-summary" style="display: none;">
+                        <div class="summary-row">
+                            <span>Subtotal:</span>
+                            <span id="subtotal">₹0</span>
+                        </div>
+                        <div class="summary-row">
+                            <span>Tax (10%):</span>
+                            <span id="tax">₹0</span>
+                        </div>
+                        <div class="summary-row total">
+                            <span>Total:</span>
+                            <span id="total">₹0</span>
+                        </div>
+                        <button class="checkout-btn">Proceed to Checkout</button>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast"></div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
